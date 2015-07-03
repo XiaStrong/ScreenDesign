@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailDiscussViewController">
+            <connections>
+                <outlet property="backView" destination="RfY-uf-wzh" id="OkF-cT-gJm"/>
+                <outlet property="commitTf" destination="sNM-qi-hgP" id="UHr-H0-IKW"/>
+                <outlet property="detailTabView" destination="TQB-oY-lCp" id="QQY-N6-VjV"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RfY-uf-wzh">
+                    <rect key="frame" x="0.0" y="518" width="320" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kHk-xN-Gg7">
+                            <rect key="frame" x="260" y="10" width="50" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="KL9-vL-HEp"/>
+                            </constraints>
+                            <state key="normal" title="确定">
+                                <color key="titleColor" red="1" green="0.59653523060000002" blue="0.1191378939" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="sureBtnClick:" destination="-1" eventType="touchUpInside" id="rwg-bi-jcG"/>
+                            </connections>
+                        </button>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="回复楼主" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sNM-qi-hgP">
+                            <rect key="frame" x="8" y="10" width="240" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="RMc-23-ZZr"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="kHk-xN-Gg7" firstAttribute="leading" secondItem="sNM-qi-hgP" secondAttribute="trailing" constant="10" id="7m0-IW-CzV"/>
+                        <constraint firstItem="sNM-qi-hgP" firstAttribute="leading" secondItem="RfY-uf-wzh" secondAttribute="leading" constant="10" id="8Ml-cf-nLu"/>
+                        <constraint firstItem="sNM-qi-hgP" firstAttribute="top" secondItem="RfY-uf-wzh" secondAttribute="top" constant="10" id="FWr-uf-64f"/>
+                        <constraint firstAttribute="trailing" secondItem="kHk-xN-Gg7" secondAttribute="trailing" constant="10" id="PgM-Jp-1KI"/>
+                        <constraint firstAttribute="height" constant="50" id="TkG-aV-YuZ"/>
+                        <constraint firstItem="kHk-xN-Gg7" firstAttribute="height" secondItem="sNM-qi-hgP" secondAttribute="height" id="iPL-fE-Gbs"/>
+                        <constraint firstItem="kHk-xN-Gg7" firstAttribute="top" secondItem="sNM-qi-hgP" secondAttribute="top" id="zvx-65-tkE"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="TQB-oY-lCp">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="518"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="TQB-oY-lCp" secondAttribute="bottom" constant="50" id="0ta-lB-aVi"/>
+                <constraint firstAttribute="trailing" secondItem="RfY-uf-wzh" secondAttribute="trailing" id="Vga-z8-Fva"/>
+                <constraint firstItem="RfY-uf-wzh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Zi9-TH-10k"/>
+                <constraint firstItem="TQB-oY-lCp" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="jsI-mL-3jL"/>
+                <constraint firstAttribute="trailing" secondItem="TQB-oY-lCp" secondAttribute="trailing" id="rIx-dE-GMf"/>
+                <constraint firstItem="TQB-oY-lCp" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="uEu-sd-ISK"/>
+                <constraint firstAttribute="bottom" secondItem="RfY-uf-wzh" secondAttribute="bottom" id="vCL-yn-CQM"/>
+            </constraints>
+            <point key="canvasLocation" x="299" y="244"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

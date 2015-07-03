@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CommentViewController">
+            <connections>
+                <outlet property="commenttextField" destination="1i2-aA-9gX" id="u8G-Bg-VB8"/>
+                <outlet property="myTab" destination="bGZ-nH-Gix" id="Fce-EG-fY3"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="bGZ-nH-Gix">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZpC-Mt-6Gv">
+                    <rect key="frame" x="0.0" y="519" width="320" height="49"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="我要评论" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1i2-aA-9gX">
+                            <rect key="frame" x="15" y="9" width="290" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="Tsm-Rp-SaK"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="1i2-aA-9gX" firstAttribute="leading" secondItem="ZpC-Mt-6Gv" secondAttribute="leading" constant="15" id="3dL-HD-Yfa"/>
+                        <constraint firstAttribute="height" constant="49" id="3gh-C3-2fA"/>
+                        <constraint firstAttribute="trailing" secondItem="1i2-aA-9gX" secondAttribute="trailing" constant="15" id="S3a-ZD-oAc"/>
+                        <constraint firstAttribute="bottom" secondItem="1i2-aA-9gX" secondAttribute="bottom" constant="10" id="tHQ-NU-nue"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="bGZ-nH-Gix" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="1P7-FL-xYY"/>
+                <constraint firstAttribute="bottom" secondItem="ZpC-Mt-6Gv" secondAttribute="bottom" id="6Nl-eR-JG2"/>
+                <constraint firstAttribute="trailing" secondItem="ZpC-Mt-6Gv" secondAttribute="trailing" id="9qw-xT-49v"/>
+                <constraint firstItem="bGZ-nH-Gix" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="DV9-gg-nsd"/>
+                <constraint firstItem="ZpC-Mt-6Gv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="QFA-8q-YTC"/>
+                <constraint firstItem="ZpC-Mt-6Gv" firstAttribute="top" secondItem="bGZ-nH-Gix" secondAttribute="bottom" id="dg2-Ce-qSr"/>
+                <constraint firstAttribute="trailing" secondItem="bGZ-nH-Gix" secondAttribute="trailing" id="kU7-Qu-cQt"/>
+            </constraints>
+            <point key="canvasLocation" x="151" y="122"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
